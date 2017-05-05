@@ -1,0 +1,517 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>eInfraCentral Platform</title>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- stylesheets -->
+    <link href="font-awesome-4.6.3/css/font-awesome.min.css" rel="stylesheet" >
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <!--<link href="uikit-3/css/uikit.min.css" rel="stylesheet">-->
+    <link href="css/theme.css" rel="stylesheet">
+    <link href="css/custom.css" rel="stylesheet">
+
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans|Roboto|Roboto+Condensed" rel="stylesheet">
+
+    <!--<script src="js/theme.js" ></script>-->
+    <!--<script src="js/uikit.js" ></script>-->
+    <script src="js/sticky.js" ></script>
+
+</head>
+
+<body>
+<openminted-platform><top-menu><div class="uk-sticky-placeholder" style="height: 106px;">
+    <div class="tm-navbar-container uk-sticky-init uk-active uk-navbar-attached" data-uk-sticky="{media: 768, clsactive:'uk-active uk-navbar-attached'}" style="position: fixed; top: 0px; width: 100%;">
+        <div class="tm-toolbar uk-clearfix uk-visible-large">
+            <div class="uk-float-right">
+				<div class="uk-panel">
+                    <span><a routerlinkactive="uk-active">SIGN IN</a></span>
+                    |
+                	<span><a routerlinkactive="uk-active">REGISTER</a></span>    
+                </div>
+                <!--template bindings={}-->
+            </div>
+        </div>
+        <div class="uk-position-relative uk-text-center">
+            <div class="tm-navbar-left uk-flex uk-flex-middle">
+                <a class="tm-logo-small uk-visible-large" href="http://einfracentral.eu/">
+                    <img alt="eInfraCentral" src="imgs/einfracentral_logo_horizontal.png" width="70%">
+                </a>
+            </div>
+
+            <nav class="tm-navbar uk-navbar main-menu">
+
+                <ul class="uk-navbar-nav uk-visible-large">
+                    <li><a routerlink="/home" routerlinkactive="uk-active" href="./index.html">Home</a></li>
+                    <li><a routerlink="/search" routerlinkactive="uk-active" href="./browse.html">Browse</a></li>
+                    <!--<li class="uk-active"><a routerlink="/search" routerlinkactive="uk-active" href="/search" class="uk-active">Browse</a></li>-->
+                    
+                    
+                    <li><a href="http://openminted.eu/support-training/" target="_blank">Support</a></li>
+                    <!--template bindings={}--></ul>
+                <a class="tm-logo-small uk-hidden-large" href="http://yootheme.com/demo/themes/joomla/2016/chester">
+                    <img alt="OpenMinted" src="http://openminted.eu/wp-content/uploads/2016/02/OpenMINTED_Tag_Color.png" width="30%">
+                </a>
+                
+
+            </nav>
+
+            
+                
+                    
+                        
+                        
+                        
+                        
+                    
+                
+            
+        </div>
+    </div>
+</div>
+
+</top-menu>
+<router-outlet></router-outlet><search _nghost-sbd-32=""><div _ngcontent-sbd-32="" class="uk-block tm-block-main uk-block-default uk-block-large searchBoxContainer">
+    <div _ngcontent-sbd-32="" class="uk-container uk-container-center">
+        <div _ngcontent-sbd-32="" class="tm-middle uk-grid" data-uk-grid-margin="" data-uk-grid-match="">
+            <div _ngcontent-sbd-32="" class="tm-main uk-width-medium-1-1 uk-row-first">
+                <main _ngcontent-sbd-32="" class="tm-content">
+                    <div _ngcontent-sbd-32="">
+                    </div>
+                    <article _ngcontent-sbd-32="" class="uk-article uk-width-medium-3-4 uk-align-center">
+
+                        <!--<div _ngcontent-sbd-32="" class="" style="margin-bottom: 50px">
+                            <div _ngcontent-sbd-32="" class="uk-align-right">
+                                <button _ngcontent-sbd-32="" class="uk-button-blue" style="width: 150px">Advanced view</button>
+                            </div>
+                        </div>-->
+
+                        <div _ngcontent-sbd-32="" class="uk-text-center">
+                            <form _ngcontent-sbd-32="" class="searchForm uk-form ng-untouched ng-pristine ng-valid">
+                                <div _ngcontent-sbd-32="" class="uk-grid uk-grid-width-1-1" data-uk-grid-margin="">
+                                    <div _ngcontent-sbd-32="" class="uk-width-medium-9-10">
+                                        <input _ngcontent-sbd-32="" class="uk-width-1-1 form-control searchTextBox ng-untouched ng-pristine ng-valid" formcontrolname="query" placeholder="Search" style="padding: 6px 20px" type="text">
+                                    </div>
+                                    <div _ngcontent-sbd-32="" class="searchButton uk-width-medium-1-10">
+                                        <button _ngcontent-sbd-32="" class="uk-button uk-button-large uk-button-primary uk-align-right">
+                                            <i _ngcontent-sbd-32="" aria-hidden="true" class="fa fa-search"></i>
+                                        </button>
+                                    </div>
+                                </div>
+                            </form>
+
+                            <!--template bindings={}-->
+                        </div>
+                    </article>
+                </main>
+            </div>
+        </div>
+    </div>
+</div>
+<div _ngcontent-sbd-32="" class="uk-block tm-block-main uk-block-default uk-block-large">
+    <div _ngcontent-sbd-32="" class="uk-container uk-container-center">
+        <div _ngcontent-sbd-32="" class="tm-middle uk-grid" data-uk-grid-margin="" data-uk-grid-match="" id="tm-middle">
+            <div _ngcontent-sbd-32="" class="tm-main uk-width-medium-1-1 uk-row-first">
+                <main _ngcontent-sbd-32="" class="tm-content" id="tm-content">
+                    <div _ngcontent-sbd-32="" id="system-message-container">
+                    </div>
+                    <article _ngcontent-sbd-32="" class="uk-article">
+
+                        <div class="uk-grid uk-margin-large-top">
+                            <aside class="tm-sidebar-a uk-width-medium-1-4" style="min-height: 1217px;">
+
+                                
+                                <div class="uk-panel uk-panel-box uk-panel-box-primary-blue">
+                                    		<h3 class="uk-panel-title">Service Area</h3>
+                                            
+                                            <p class="resourceType">
+                                                <input data-md-icheck="" name="vehicle" value="Bike" type="checkbox">
+                                                <span >
+                                                    <span>Data Hosting</span>
+                                                </span>
+                                                <span class="resourceTypeCount">(287)</span>
+                                                <!--<span>
+                                                    <span><i aria-hidden="true" class="fa fa-database uk-float-right resourceTypeIcon"></i></span>
+                                                </span>-->
+                                            </p>
+                                            
+                                            <p class="resourceType">
+                                                <input data-md-icheck="" name="vehicle" value="Bike" type="checkbox">
+                                                <span >
+                                                    <span>Registration & Management &Sharing</span>
+                                                </span>
+                                                <span class="resourceTypeCount">(217)</span>
+                                                <!--<span>
+                                                    <span><i aria-hidden="true" class="fa fa-database uk-float-right resourceTypeIcon"></i></span>
+                                                </span>-->
+                                            </p>
+                                            
+                                            <p class="resourceType">
+                                                <input data-md-icheck="" name="vehicle" value="Bike" type="checkbox">
+                                                <span >
+                                                    <span>Data Discovery</span>
+                                                </span>
+                                                <span class="resourceTypeCount">(189)</span>
+                                                <!--<span>
+                                                    <span><i aria-hidden="true" class="fa fa-database uk-float-right resourceTypeIcon"></i></span>
+                                                </span>-->
+                                            </p>
+                                            
+                                            <p class="resourceType">
+                                                <input data-md-icheck="" name="vehicle" value="Bike" type="checkbox">
+                                                <span >
+                                                    <span>Data Access</span>
+                                                </span>
+                                                <span class="resourceTypeCount">(136)</span>
+                                                <!--<span>
+                                                    <span><i aria-hidden="true" class="fa fa-database uk-float-right resourceTypeIcon"></i></span>
+                                                </span>-->
+                                            </p>
+                                            
+                                            <p class="resourceType">
+                                                <input data-md-icheck="" name="vehicle" value="Bike" type="checkbox">
+                                                <span >
+                                                    <span>Interface & Movement</span>
+                                                </span>
+                                                <span class="resourceTypeCount">(98)</span>
+                                                <!--<span>
+                                                    <span><i aria-hidden="true" class="fa fa-database uk-float-right resourceTypeIcon"></i></span>
+                                                </span>-->
+                                            </p>
+                                            
+                                            <p class="resourceType">
+                                                <input data-md-icheck="" name="vehicle" value="Bike" type="checkbox">
+                                                <span >
+                                                    <span>Operational & Central Services</span>
+                                                </span>
+                                                <span class="resourceTypeCount">(85)</span>
+                                                <!--<span>
+                                                    <span><i aria-hidden="true" class="fa fa-database uk-float-right resourceTypeIcon"></i></span>
+                                                </span>-->
+                                            </p>
+                                            
+                                            <p class="resourceType">
+                                                <input data-md-icheck="" name="vehicle" value="Bike" type="checkbox">
+                                                <span >
+                                                    <span>Consultancy & Costumer Relation</span>
+                                                </span>
+                                                <span class="resourceTypeCount">(65)</span>
+                                                <!--<span>
+                                                    <span><i aria-hidden="true" class="fa fa-database uk-float-right resourceTypeIcon"></i></span>
+                                                </span>-->
+                                            </p>
+                                            
+  					          </div>
+
+                            	<div class="uk-panel uk-panel-box refines uk-panel-box-primary-blue">
+
+                                    <h3 class="uk-panel-title">Limit your search</h3>
+                                    
+                                    <div class="refineCategory uk-grid-margin">
+                                            <span>Service Status</span>
+                                            <div class="refineOption">
+                                                <input data-md-icheck="" name="vehicle" value="Bike" type="checkbox">
+                                                active
+                                                <span>(605)</span>
+                                            </div>
+                                            <div class="refineOption">
+                                                <input data-md-icheck="" name="vehicle" value="Bike" type="checkbox">
+                                                planned
+                                                <span>(245)</span>
+                                            </div>
+                                            <div class="refineOption">
+                                                <input data-md-icheck="" name="vehicle" value="Bike" type="checkbox">
+                                                decommissioned
+                                                <span>(126)</span>
+                                            </div>
+                                        </div>
+                                        
+                                        <div class="refineCategory uk-grid-margin">
+                                            <span>Payment model</span>
+                                            <div class="refineOption">
+                                                <input data-md-icheck="" name="vehicle" value="Bike" type="checkbox">
+                                                free
+                                                <span>(817)</span>
+                                            </div>
+                                            <div class="refineOption">
+                                                <input data-md-icheck="" name="vehicle" value="Bike" type="checkbox">
+                                                pay-as-you-go
+                                                <span>(245)</span>
+                                            </div>
+                                            <div class="refineOption">
+                                                <input data-md-icheck="" name="vehicle" value="Bike" type="checkbox">
+                                                subscription
+                                                <span>(126)</span>
+                                            </div>
+                                            <div class="refineOption">
+                                                <a>View more ...</a>
+                                            </div>
+                                        </div>
+                                    
+										<div class="refineCategory uk-grid-margin">
+                                            <span>Service Options</span>
+                                            <div class="refineOption">
+                                                <input data-md-icheck="" name="vehicle" value="Bike" type="checkbox">
+                                                standard
+                                                <span>(186)</span>
+                                            </div>
+                                            <div class="refineOption">
+                                                <input data-md-icheck="" name="vehicle" value="Bike" type="checkbox">
+                                                enhanced
+                                                <span>(145)</span>
+                                            </div>
+                                            <div class="refineOption">
+                                                <input data-md-icheck="" name="vehicle" value="Bike" type="checkbox">
+                                                bronze
+                                                <span>(126)</span>
+                                            </div>
+                                            <div class="refineOption">
+                                                <input data-md-icheck="" name="vehicle" value="Bike" type="checkbox">
+                                                silver
+                                                <span>(85)</span>
+                                            </div>
+                                            <div class="refineOption">
+                                                <input data-md-icheck="" name="vehicle" value="Bike" type="checkbox">
+                                                gold
+                                                <span>(23)</span>
+                                            </div>
+                                        </div>    
+                                    
+
+                                </div>
+                            </aside>
+
+                            <div class="uk-width-medium-3-4">
+				                <div>
+				                
+				                	<div class="uk-width-1-1 uk-row-first uk-clearfix compareButton">
+                                        <div class="uk-float-right">
+                                        	<a href="./compare.html" class="uk-button uk-button-blue"><i class="fa fa-compress fa-flip-horizontal" aria-hidden="true"></i> | 2 for comparison</a>
+                                        </div>
+                                    </div>
+
+									<div class="uk-width-1-1 uk-row-first uk-clearfix actions">
+                                        <div class="uk-float-right">
+                                        	<a><i class="fa fa-th fa-2x" aria-hidden="true"></i></a>
+                                        	<a style="margin-left: 10px"><i class="fa fa-th-list fa-2x" aria-hidden="true"></i></a>
+                                        </div>
+                                    </div>
+
+                                    <div class="uk-width-1-1 uk-row-first">
+                                        <ul class="uk-pagination">
+                                            <li class="uk-disabled"><span><i class="uk-icon-angle-double-left"></i></span></li>
+											<li class="uk-disabled"><span><i class="uk-icon-angle-left"></i></span></li>
+                                            <li><span>page 1 of 32</span></li>
+                                            <li><a><i class="uk-icon-angle-right"></i></a></li>
+                                        	<li><a><i class="uk-icon-angle-double-right"></i></a></li>
+                                        </ul>
+                                    </div>
+
+                                    <div class="uk-grid-margin">
+                                        <div>
+                                            <div class="uk-grid uk-grid-divider resource" data-uk-grid-margin="" data-uk-grid-match="">
+                                                <div class="uk-width-medium-1-1 uk-row-first">
+                                                    <div class="uk-grid" data-uk-grid-margin="">
+                                                        <div class="uk-width-medium-9-10 uk-row-first">
+                                                            <div class="uk-nbfc">
+                                                                <h2 class="uk-h3 uk-margin-remove">
+                                                                    <a href="./landingPage-cloudCompute.html">Cloud Compute</a>
+                                                                </h2>
+                                                                <div class="uk-margin serviceDescription">Cloud Compute gives you the ability to deploy and scale virtual machines on­ demand. It offers
+                                                                guaranteed computational resources in a secure and isolated environment with standard API access, without the overhead of managing physical servers.
+																Cloud Compute offers the possibility to select pre­ configured virtual appliances (e.g. CPU, memory, disk, operating system or software) from a catalogue 
+																replicated across all EGI cloud providers.
+																</div>
+																<div style="margin-bottom: 10px; color: #D1303A"><i>"Run virtual machines on demand with complete control over computing resources"</i></div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="uk-width-medium-1-10">
+                                                            <div class="uk-thumbnail uk-align-medium-left resourceTypeIcon">
+                                                                <a class="selected"><i class="fa fa-compress fa-flip-horizontal fa-2x" aria-hidden="true"></i></a>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <hr class="uk-grid-divider">
+                                        </div>
+                                        
+                                        
+                                        <div>
+                                            <div class="uk-grid uk-grid-divider resource" data-uk-grid-margin="" data-uk-grid-match="">
+                                                <div class="uk-width-medium-1-1 uk-row-first">
+                                                    <div class="uk-grid" data-uk-grid-margin="">
+                                                        <div class="uk-width-medium-9-10 uk-row-first">
+                                                            <div class="uk-nbfc">
+                                                                <h2 class="uk-h3 uk-margin-remove">
+                                                                    <a>High-Throughput Compute</a>
+                                                                </h2>
+                                                                <div class="uk-margin serviceDescription">With High­ Throughput Compute you can run computational jobs at scale on the EGI infrastructure. It allows you to analyse large datasets 
+                                                                and execute thousands of parallel computing tasks. High­Throughput Compute is provided by a distributed network of computing centres, accessible via a standard 
+                                                                interface and membership of a virtual organisation. EGI offers more than 650,000 cores of installed capacity, supporting about 1.6 million computing jobs per day.
+																</div>
+																<div style="margin-bottom: 10px; color: #D1303A"><i>"Execute thousands of computational tasks to analyse large datasets"</i></div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="uk-width-medium-1-10">
+                                                            <div class="uk-thumbnail uk-align-medium-left resourceTypeIcon">
+                                                                <a><i class="fa fa-compress fa-flip-horizontal fa-2x" aria-hidden="true"></i></a>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <hr class="uk-grid-divider">
+                                        </div>
+                                        
+                                        
+                                        <div>
+                                            <div class="uk-grid uk-grid-divider resource" data-uk-grid-margin="" data-uk-grid-match="">
+                                                <div class="uk-width-medium-1-1 uk-row-first">
+                                                    <div class="uk-grid" data-uk-grid-margin="">
+                                                        <div class="uk-width-medium-9-10 uk-row-first">
+                                                            <div class="uk-nbfc">
+                                                                <h2 class="uk-h3 uk-margin-remove">
+                                                                    <a>Data Hub</a>
+                                                                </h2>
+                                                                <div class="uk-margin serviceDescription">Access selected public datasets and efficiently consume them from EGI compute services
+																</div>
+																<div style="margin-bottom: 10px; color: #D1303A"><i>"Access key scientific datasets scalably"</i></div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="uk-width-medium-1-10">
+                                                            <div class="uk-thumbnail uk-align-medium-left resourceTypeIcon">
+                                                                <a class="selected"><i class="fa fa-compress fa-flip-horizontal fa-2x" aria-hidden="true"></i></a>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <hr class="uk-grid-divider">
+                                        </div>
+                                        
+                                        <div>
+                                            <div class="uk-grid uk-grid-divider resource" data-uk-grid-margin="" data-uk-grid-match="">
+                                                <div class="uk-width-medium-1-1 uk-row-first">
+                                                    <div class="uk-grid" data-uk-grid-margin="">
+                                                        <div class="uk-width-medium-9-10 uk-row-first">
+                                                            <div class="uk-nbfc">
+                                                                <h2 class="uk-h3 uk-margin-remove">
+                                                                    <a>Data Transfer</a>
+                                                                </h2>
+                                                                <div class="uk-margin serviceDescription">Data Transfer allows you to move any type of data files asynchronously from one place to another. 
+                                                                The service includes dedicated interfaces to display statistics of on­going transfers and manage network resources.
+																Data Transfer is ideal to move large amounts of files or very large files. The Data Transfer service has mechanisms to 
+																ensure automatic retry in case of failure.
+																</div>
+																<div style="margin-bottom: 10px; color: #D1303A"><i>"Transfer large sets of data from one place to another"</i></div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="uk-width-medium-1-10">
+                                                            <div class="uk-thumbnail uk-align-medium-left resourceTypeIcon">
+                                                                <a><i class="fa fa-compress fa-flip-horizontal fa-2x" aria-hidden="true"></i></a>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <hr class="uk-grid-divider">
+                                        </div>
+                                        
+                                        <div>
+                                            <div class="uk-grid uk-grid-divider resource" data-uk-grid-margin="" data-uk-grid-match="">
+                                                <div class="uk-width-medium-1-1 uk-row-first">
+                                                    <div class="uk-grid" data-uk-grid-margin="">
+                                                        <div class="uk-width-medium-9-10 uk-row-first">
+                                                            <div class="uk-nbfc">
+                                                                <h2 class="uk-h3 uk-margin-remove">
+                                                                    <a>B2SAFE</a>
+                                                                </h2>
+                                                                <div class="uk-margin serviceDescription">B2SAFE is a robust, safe and highly available service which allows community and departmental 
+                                                                repositories to implement data management policies on their research data across multiple administrative domains in a 
+                                                                trustworthy manner. Abstraction layer of large scale, heterogeneous data storages guards against data loss in long-term 
+                                                                archiving allows to optimize access for users (e.g. from different regions) brings data closer to facilities for compute-intensive analysis.
+																</div>
+																<!--<div style="margin-bottom: 10px; color: #D1303A"><i>"Transfer large sets of data from one place to another"</i></div>-->
+                                                            </div>
+                                                        </div>
+                                                        <div class="uk-width-medium-1-10">
+                                                            <div class="uk-thumbnail uk-align-medium-left resourceTypeIcon">
+                                                                <a><i class="fa fa-compress fa-flip-horizontal fa-2x" aria-hidden="true"></i></a>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <hr class="uk-grid-divider">
+                                        </div>
+                                        
+                                        <div>
+                                            <div class="uk-grid uk-grid-divider resource" data-uk-grid-margin="" data-uk-grid-match="">
+                                                <div class="uk-width-medium-1-1 uk-row-first">
+                                                    <div class="uk-grid" data-uk-grid-margin="">
+                                                        <div class="uk-width-medium-9-10 uk-row-first">
+                                                            <div class="uk-nbfc">
+                                                                <h2 class="uk-h3 uk-margin-remove">
+                                                                    <a>B2SHARE</a>
+                                                                </h2>
+                                                                <div class="uk-margin serviceDescription">B2SHARE is a user-friendly, reliable and trustworthy way for researchers, scientific communities 
+                                                                and citizen scientists to store and share small-scale research data from diverse contexts. B2SHARE is a solution that 
+                                                                facilitates research data storage, guarantees long-term persistence of data and allows data, results or ideas to be shared worldwide.
+																</div>
+																<!--<div style="margin-bottom: 10px; color: #D1303A"><i>"Transfer large sets of data from one place to another"</i></div>-->
+                                                            </div>
+                                                        </div>
+                                                        <div class="uk-width-medium-1-10">
+                                                            <div class="uk-thumbnail uk-align-medium-left resourceTypeIcon">
+                                                                <a><i class="fa fa-compress fa-flip-horizontal fa-2x" aria-hidden="true"></i></a>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <hr class="uk-grid-divider">
+                                        </div>
+                        
+                                </div>
+
+                            </div>
+                        </div>
+                    </article>
+                </main>
+            </div>
+        </div>
+    </div>
+</div></search>
+<footer _nghost-sbd-3=""><div _ngcontent-sbd-3="" class="uk-block tm-block-bottom-d uk-block-secondary uk-block-large" id="tm-bottom-d">
+    <div _ngcontent-sbd-3="" class="uk-container uk-container-center">
+        <section _ngcontent-sbd-3="" class="tm-bottom-d uk-grid" data-uk-grid-margin="" data-uk-grid-match="{target:'> div > .uk-panel'}">
+            <div _ngcontent-sbd-3="" class="uk-width-1-1 uk-row-first">
+                <div class="uk-panel uk-text-center">
+                    <img src="imgs/logo-ce-horizontal-en-neg-quadri-lr.png" width="160" height="25">
+                    <p _ngcontent-sbd-3="">eInfraCentral (731049) is a H2020 project <br _ngcontent-sbd-3=""> funded by the European Commission.</p>
+                    
+                </div>
+            </div>
+        </section>
+    </div>
+</div></footer></openminted-platform>
+
+
+
+<script async src="dist/main.bundle.js"></script>
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+
